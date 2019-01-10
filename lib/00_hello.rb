@@ -1,5 +1,5 @@
-def say_hello
-	puts "bonjour"
+def say_hello (first_name)
+	puts "Bonjour, #{first_name}!"
 end
 
-say_hello
+say_hello("bastien")
