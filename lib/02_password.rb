@@ -1,5 +1,5 @@
 
-#/ Initialiser son mdp et le déclarer
+#/ Première méthode : Initialiser son mdp 
 
 def sign_in
 	puts "Définis ton password"
@@ -9,6 +9,7 @@ def sign_in
 end
 
 
+#/ Deuxième méthode : Déclarer son mdp
 def log_in
 	puts "Quel est ton password?"
 	print "> "
@@ -17,7 +18,7 @@ def log_in
 end
 
 
-#/ Entrer son log_in
+#/ Troisième méthode : Entrer son log_in et faire la correspondance entre la 1ère et 2ème méthode
 #/ Boucle while pour confirmer le log_in tant que le mdp n'est pas le bon
 
 def check (true_mdp,mdp)
@@ -26,14 +27,15 @@ def check (true_mdp,mdp)
  		print "> "
   		mdp = gets.chomp
 	end
-	puts "Vous pouvez entrer"
+	puts "Félicitations, vous pouvez entrer !"
 end
 
+#/ Quatrième méthode : Affichage du welcome_screen
 def welcome_screen
-	puts "Bienvenue dans la zone secrète"
+	puts "Bastien est vraiment un petit filou !"
 end
 
-#/ Exécution de chaque méthode
+#/ Conclusion : Exécution de chaque méthode
 
 def perform
 	true_mdp = sign_in
@@ -43,3 +45,6 @@ def perform
 end
 
 perform
+
+
+
