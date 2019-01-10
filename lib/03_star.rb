@@ -10,10 +10,6 @@ end
 
 def games (d)
 	m = 0
-	if m < 0
-		then m = 0
-	end
-	
 	i = 1
 
 	while m < 10
@@ -25,6 +21,9 @@ def games (d)
 			i = i+1
 		elsif d == 1
 			m = m-1
+			if m < 0 #/ pour ne pas avoir une échelle négative
+				then m = 0
+			end
 			puts "Tour #{i}, tu descends d'une case et tu es à la marche #{m}"
 			i = i+1
 		else 
